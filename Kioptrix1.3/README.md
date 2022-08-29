@@ -62,10 +62,10 @@ whatweb http://10.0.2.5
 http://10.0.2.5 [200 OK] Apache[2.2.8], Country[RESERVED][ZZ], HTTPServer[Ubuntu Linux][Apache/2.2.8 (Ubuntu) PHP/5.2.4-2ubuntu5.6 with Suhosin-Patch], IP[10.0.2.5], PHP[5.2.4-2ubuntu5.6][Suhosin-Patch], PasswordField[mypassword], X-Powered-By[PHP/5.2.4-2ubuntu5.6]
 ```
 On the web, there is simply a username field and a password field next to a picture of a goat.
-![Index](/images/index.png)
+![Index](images/index.png)
 
 After some tests it is observed that the password field is vulnerable to SQLi. For example, if it is tested with _admin_ and _test' or 1=1-- -_ it gives us the following output:
-![SQLi Admin](/images/sqli_admin.png)
+![SQLi Admin](images/sqli_admin.png)
 
 You could brute force to find valid users via ssh, but it would take more time.
 To finish listing the web, you can perform fuzzing to find directories and files. In this case I will use _gobuster_.
@@ -103,8 +103,8 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 ===============================================================
 ```
 Users john and robert are found. Accessing john's directory exposes his credentials. It can also be checked by login or SQLi.
-![John Directory](/images/john_directory.png)
-![John Password](/images/john_password.png)
+![John Directory](images/john_directory.png)
+![John Password](images/john_password.png)
 
 #### SMB
 On the other hand, ports 139 and 445 are running smb. To enumerate them, some nmap scripts intended for this purpose will be used.
