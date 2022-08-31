@@ -51,7 +51,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 11.68 seconds
 ```
 
-##Web
+## Web
 
 Port 80 is running a web where there is a message from the author:
 ![Web Message](images/web_author.png)
@@ -64,6 +64,8 @@ In the _documentation_ (http://10.0.2.9/jabc/?q=node/7) there is a message with 
 
 In /jabcd0cs/ there is a login panel provided by OpenDocMan v1.2.7.
 ![OpenDocMan Login](images/login_odm.png)
+
+## Exploitation
 
 This version is vulnerable to [SQLi](https://www.exploit-db.com/exploits/32075). The parameter add_value in _http://10.0.2.9/jabcd0cs/ajax_udf.php?q=1&add_value=odm_user_ is vulnerable, so we can try list the databse with sqlmap.
 ```Console
@@ -158,6 +160,7 @@ $ python -c 'import pty; pty.spawn("/bin/bash")'
 webmin@VulnOSv2:~$
 webmin@VulnOSv2:~$ export TERM=xterm-256color
 ```
+## Privilege Escalation
 
 Linux 3.13 on Ubuntu is vulnerable to [privilege escalation](https://www.exploit-db.com/exploits/37292). 
 
