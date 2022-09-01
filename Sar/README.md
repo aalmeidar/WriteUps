@@ -70,7 +70,7 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 
 In _robots.txt_ you can see "sar2HTML", if add it to the url you are going to see another page.
 ![robots](images/robots.png)
-![Sar2HTML](images/sar2html.png)
+![Sar2HTML](images/sar2HTML.png)
 
 ## Exploitation
 
