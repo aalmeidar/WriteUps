@@ -4,6 +4,7 @@
 - Date Release: 15 Feb 2020
 - Author: Love
 - Series: Sar
+- Platform: VulnHub
 - Link: https://www.vulnhub.com/entry/sar-1,425/
 - Difficulty: Easy
 

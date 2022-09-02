@@ -4,7 +4,7 @@
 - Date release: 17 May 2016
 - Author: c4b3rw0lf
 - Series: VulnOS
-- Platform: VulnOS
+- Platform: VulnHub
 - Link: https://www.vulnhub.com/entry/vulnos-2,147/
 - Difficulty: Easy
 
