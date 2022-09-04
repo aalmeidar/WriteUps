@@ -94,7 +94,7 @@ After a few attempts, I have noticed that there is a filter. For example, the st
 
 And is successful:
 
-![sqli](sqli.png)
+![sqli](images/sqli.png)
 
 So we have ssh credentials. Let's add the proxy to proxychains:
 ```Console
