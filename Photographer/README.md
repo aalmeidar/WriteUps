@@ -165,7 +165,7 @@ We have 2 usernames: Daisa and Agi. The last line looks weird maybe its a passwo
 The web running on port 80 is not interesting. Is a simple web site with a template. 
 ![Web on 80](images/index_template.png)
 But web running on port 8000 is using Koken CMS that is vulnerable to [Arbitrary File Upload](https://www.exploit-db.com/exploits/48706).
-![Index](index.png)
+![Index](images/index.png)
 
 First and foremost, let's apply fuzzing to discover hidden directories and files.
 _Gobuster_ report me:
